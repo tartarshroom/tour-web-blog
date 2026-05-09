@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Educational Tour 2026</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#home">
+            Educational Tour
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+                <li class="nav-item"><a class="nav-link" href="#days">Days</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reflections">Reflections</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero-section" id="home">
+
+    <div class="overlay"></div>
+
+    <div class="container hero-content text-center">
+
+        <h1 data-aos="fade-up">Educational Tour 2026</h1>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+            A 7-Day Journey of Learning, Discovery, and Memories
+        </p>
+
+        <div data-aos="fade-up" data-aos-delay="400">
+
+            <a href="#journey" class="btn btn-primary btn-lg">Explore Journey</a>
+            <a href="#days" class="btn btn-outline-light btn-lg">View Days</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right">
+
+                <h2>About the Tour</h2>
+
+                <p>
+                    Our educational tour (April 5–12, 2026) gave us real-world exposure through company visits,
+                    historical exploration, and team learning experiences.
+                </p>
+
+                <p>
+                    We traveled across Manila, Tagaytay, and Baguio, learning beyond the classroom.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left">
+
+                <div class="about-card">
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>7-Day Educational Tour</li>
+                        <li>Company Visits</li>
+                        <li>Historical Sites</li>
+                        <li>Team Experience</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TIMELINE ================= -->
+<section class="timeline-section" id="journey">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Journey Timeline</h2>
+        </div>
+
+        <div class="timeline-card left" data-aos="fade-right">
+            <div class="timeline-content">
+                <h3>Day 1 – Manila Arrival</h3>
+                <p>Arrival and orientation.</p>
+            </div>
+        </div>
+
+        <div class="timeline-card right" data-aos="fade-left">
+            <div class="timeline-content">
+                <h3>Day 2 – Quezon & Makati</h3>
+                <p>Hypertech & OpenText.</p>
+            </div>
+        </div>
+
+        <div class="timeline-card left" data-aos="fade-right">
+            <div class="timeline-content">
+                <h3>Day 3 – Pasay & Taguig</h3>
+                <p>MMDS & Teleperformance.</p>
+            </div>
+        </div>
+
+        <div class="timeline-card right" data-aos="fade-left">
+            <div class="timeline-content">
+                <h3>Day 4 – Tech Visits</h3>
+                <p>IT company exposure.</p>
+            </div>
+        </div>
+
+        <div class="timeline-card left" data-aos="fade-right">
+            <div class="timeline-content">
+                <h3>Day 5 – Tagaytay</h3>
+                <p>Scenic learning.</p>
+            </div>
+        </div>
+
+        <div class="timeline-card right" data-aos="fade-left">
+            <div class="timeline-content">
+                <h3>Day 6–7 – Baguio</h3>
+                <p>Cultural experience.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DAYS (FULL SCROLLABLE SYSTEM) ================= -->
+<section id="days" class="py-5">
+
+    <div class="container">
+
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h2>Daily Experiences</h2>
+            <p>Scroll through our complete journey</p>
+        </div>
+
+        <!-- DAY 1 -->
+        <div class="mb-5" data-aos="fade-up">
+            <h3 class="text-info">Day 1 – Manila Arrival & Tour</h3>
+            <p>Arrival, Luneta Park, Fort Santiago, Intramuros exploration.</p>
+
+            <div id="d1" class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="1300"
+            data-bs-pause="hover"
+            data-bs-wrap="true">
+
+                <div class="carousel-inner rounded-4">
+                    <div class="carousel-item active">
+                        <img src="assets/images/manila/m1.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m2.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m3.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m4.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m5.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m6.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m7.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m8.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m9.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m10.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m11.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m12.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m13.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m14.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m15.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m16.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m17.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/manila/m18.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                </div>
+
+                  <!-- LEFT -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#d1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <!-- RIGHT -->
+    <button class="carousel-control-next" type="button" data-bs-target="#d1" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+            </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="mb-5" data-aos="fade-up">
+            <h3 class="text-info">Day 2 – Quezon & Makati</h3>
+            <p>Hypertech and OpenText IT company visits.</p>
+
+
+            <div id="d2" class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="1300"
+                data-bs-pause="hover"
+                data-bs-wrap="true">
+                <div class="carousel-inner rounded-4">
+
+                    <div class="carousel-item active">
+                        <img src="assets/images/company/day2/21.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/22.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/23.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/24.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/25.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/26.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/27.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/28.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/29.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/210.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/211.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day2/212.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                </div>
+  <!-- LEFT -->
+<button class="carousel-control-prev" type="button" data-bs-target="#d2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</button>
+
+<!-- RIGHT -->
+<button class="carousel-control-next" type="button" data-bs-target="#d2" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</button>
+            </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="mb-5" data-aos="fade-up">
+            <h3 class="text-info">Day 3 – Pasay & Taguig</h3>
+            <p>MMDS and Teleperformance exposure.</p>
+
+            <div id="d3" class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="1300"
+                data-bs-pause="hover"
+                data-bs-wrap="true">
+                <div class="carousel-inner rounded-4">
+
+                    <div class="carousel-item active">
+                        <img src="assets/images/company/day3/31.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day3/32.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day3/33.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day3/34.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day3/35.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day3/36.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day3/37.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day3/38.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day3/39.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                </div>
+
+  <!-- LEFT -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#d3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</button>
+
+<!-- RIGHT -->
+<button class="carousel-control-next" type="button" data-bs-target="#d3" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</button>
+
+            </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="mb-5" data-aos="fade-up">
+            <h3 class="text-info">Day 4 – Tech Visits</h3>
+            <p>Corporate IT environment learning.</p>
+
+            <div id="d4" class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="1300"
+                data-bs-pause="hover"
+                data-bs-wrap="true">
+                <div class="carousel-inner rounded-4">
+
+                    <div class="carousel-item active">
+                        <img src="assets/images/company/day4/41.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day4/42.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day4/43.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day4/44.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day4/45.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day4/46.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day4/47.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day4/48.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/company/day4/49.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                </div>
+            </div>
+
+   <!-- LEFT -->
+   <button class="carousel-control-prev" type="button" data-bs-target="#d4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</button>
+
+<!-- RIGHT -->
+<button class="carousel-control-next" type="button" data-bs-target="#d4" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</button>
+
+        </div>
+
+        <!-- DAY 5 -->
+        <div class="mb-5" data-aos="fade-up">
+            <h3 class="text-info">Day 5 – Tagaytay</h3>
+            <p>Scenic bonding and learning experience.</p>
+
+            <div id="d5" class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="1500"
+                data-bs-pause="hover"
+                data-bs-wrap="true">
+                <div class="carousel-inner rounded-4">
+
+                    <div class="carousel-item active">
+                        <img src="assets/images/tagaytay/t1.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="assets/images/tagaytay/t2.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t3.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t4.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t5.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t6.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t7.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t8.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t9.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t10.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t11.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t12.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t13.JPG" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t14.JPG" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/tagaytay/t15.JPG" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                </div>
+
+                <!-- LEFT -->
+   <button class="carousel-control-prev" type="button" data-bs-target="#d5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</button>
+
+<!-- RIGHT -->
+<button class="carousel-control-next" type="button" data-bs-target="#d5" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</button>
+
+            </div>
+        </div>
+
+        <!-- DAY 6–7 -->
+        <div class="mb-5" data-aos="fade-up">
+            <h3 class="text-info">Day 6–7 – Baguio</h3>
+            <p>Cultural immersion and final tour experience.</p>
+
+            <div id="d6" class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="1300"
+            data-bs-pause="hover"
+            data-bs-wrap="true">
+            <div class="carousel-inner rounded-4">
+
+                    <div class="carousel-item active">
+                        <img src="assets/images/baguio/b1.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b2.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b3.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b4.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b5.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b6.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b7.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b8.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b9.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b10.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b11.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b12.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b13.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b14.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b15.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">                    
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b16.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b18.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b19.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b20.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b21.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b22.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b23.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b24.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/baguio/b25.jpg" class="d-block w-100" style="height:500px; object-fit:cover;">
+                    </div>
+</div>
+
+                    <!-- LEFT -->
+<button class="carousel-control-prev" type="button" data-bs-target="#d6" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</button>
+
+<!-- RIGHT -->
+<button class="carousel-control-next" type="button" data-bs-target="#d6" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</button>
+
+        </div>
+</section>
+
+<!-- ================= REFLECTIONS ================= -->
+<section class="reflection-section" id="reflections">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Reflections</h2>
+        </div>
+
+        <div class="reflection-grid">
+
+            <div class="reflection-card">
+                <h3>Learning Experience</h3>
+                <p>Real-world application of classroom knowledge.</p>
+            </div>
+
+            <div class="reflection-card">
+                <h3>Team Growth</h3>
+                <p>Stronger collaboration and bonding.</p>
+            </div>
+
+            <div class="reflection-card">
+                <h3>Career Insight</h3>
+                <p>Inspired future IT career direction.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-section">
+
+    <div class="container text-center">
+        <h2>Educational Tour 2026</h2>
+        <p>Learning • Exploring • Growing</p>
+    </div>
+
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+    </script>
+
+</body>
+</html>
