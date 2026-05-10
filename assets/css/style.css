@@ -1,3 +1,5 @@
+
+
 /* =========================
    GLOBAL
 ========================= */
@@ -46,7 +48,7 @@ body{
 .hero-section{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 140vh;
 
     background: url('../images/hero/hero.jpg') center/cover no-repeat;
 
@@ -802,125 +804,39 @@ html {
 
 }
 
-/* ================= ALBUM SECTION ================= */
-
-.album-card {
-    background: #111827;
-    padding: 30px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.album-card h3 {
-    color: #38bdf8;
-    margin-bottom: 5px;
-}
-
-.album-card p {
-    color: #cbd5e1;
-    margin-bottom: 20px;
-}
-
-/* horizontal scroll gallery */
-.album-scroll {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    padding-bottom: 10px;
-    scroll-snap-type: x mandatory;
-}
-
-/* images */
-.album-scroll img {
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 15px;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-    transition: 0.3s;
-}
-
-.album-scroll img:hover {
-    transform: scale(1.05);
-}
-
-/* hide scrollbar (optional clean UI) */
-.album-scroll::-webkit-scrollbar {
-    height: 6px;
-}
-
-.album-scroll::-webkit-scrollbar-thumb {
-    background: #38bdf8;
-    border-radius: 10px;
-}
-
-
-/* ================= ALBUM CAROUSEL ================= */
-
-.album-block {
-    background: #111827;
-    padding: 30px;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.album-block h3 {
-    color: #38bdf8;
-    margin-bottom: 5px;
-}
-
-.album-block p {
-    color: #cbd5e1;
-    margin-bottom: 20px;
-}
-
-/* carousel image styling */
-.album-img {
-    height: 420px;
-    object-fit: contain;   /* 🔥 no zoom */
-    background: #0b1220;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-/* arrows style */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(56, 189, 248, 0.7);
-    border-radius: 50%;
-    padding: 20px;
-}
-
-
 /* =========================
-   FIX: DAY CAROUSEL (NO ZOOM)
+FIX: DAY CAROUSEL (NO ZOOM)
 ========================= */
 
 #days .carousel-item img {
-    height: 420px;
+    height: 500px;
     width: 100%;
     object-fit: contain !important;   /* 🔥 IMPORTANT FIX */
     background: #0b1220;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
 }
 
 /* keep it centered and not full screen feeling */
 #days .carousel {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
+#days .carousel-inner{
+    width: 100%;
+    border-radius: 20px;
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(56, 189, 248, 0.9);
     border-radius: 50%;
     padding: 18px;
+}
+
+#days .container{
+    max-width: 1200px;
 }
 
 /* =========================================
@@ -1371,4 +1287,308 @@ body{
 
 .hero-buttons{
     margin-top: 10px;
+}
+
+
+
+/* =========================
+   🔥 GLOBAL MOBILE FIXES
+========================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* prevent weird zoom behavior on mobile */
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* =========================
+   HERO FIX (MOBILE)
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 15px 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+/* =========================
+   🔥 DAY CAROUSEL FIX (NO ZOOM / NO CROPPING)
+========================= */
+
+#days .carousel-item img {
+    width: 100%;
+    height: auto !important;
+    max-height: 320px;
+    object-fit: contain !important;
+    background: #0b1220;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+/* center carousel properly */
+#days .carousel {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* =========================
+   🔥 IMAGE GALLERY FIX
+========================= */
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+}
+
+/* album images */
+.album-scroll img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* =========================
+   🔥 TIMELINE MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    .timeline-section::before {
+        left: 10px;
+    }
+
+    .timeline-card {
+        width: 100%;
+        padding: 15px 15px 15px 40px;
+    }
+
+    .timeline-item::before {
+        left: -30px;
+    }
+
+    .timeline-content {
+        padding: 18px;
+    }
+}
+
+/* =========================
+   🔥 STAT / CARD MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    .stats-card h3 {
+        font-size: 2rem;
+    }
+
+    .about-section h2,
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .about-card {
+        padding: 20px;
+    }
+}
+
+/* =========================
+   🔥 REMOVE OVERFLOW ISSUES
+========================= */
+
+* {
+    max-width: 100%;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* =========================
+   🔥 MOBILE HERO LAYOUT FIX (CUSTOM)
+========================= */
+
+@media (max-width: 768px) {
+
+    /* keep row as flex but control order */
+    .hero-mobile-reverse {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* LEFT SIDE (TEXT) */
+    .hero-mobile-reverse .col-lg-7 {
+        flex: 1.4;
+        text-align: left !important;
+        padding-right: 10px;
+    }
+
+    /* RIGHT SIDE (IMAGE) */
+    .hero-mobile-reverse .col-lg-5 {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* shrink profile image */
+    .hero-photo {
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0;
+    }
+
+    /* name smaller but readable */
+    .hero-content h1 {
+        font-size: 1.4rem !important;
+        margin-bottom: 5px;
+    }
+
+    /* paragraph tighter */
+    .hero-content p {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+
+    /* buttons stack but compact */
+    .hero-buttons .btn {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    /* ABOUT + PERSONAL INFO SIDE BY SIDE FIX */
+    .about-section .row {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .about-section .col-lg-6 {
+        flex: 1;
+    }
+
+    .about-card {
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ================= DAYS SECTION FIX ================= */
+
+.days-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Make text cleaner */
+#days h3 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#days p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+/* Carousel fix (removes "floating wide look") */
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Image consistency */
+.carousel-inner img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .days-wrapper {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ABOUT SECTION overall spacing */
+    .about-section {
+        padding: 40px 15px;   /* was too big */
+    }
+
+    /* reduce huge title */
+    .about-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    /* paragraph spacing */
+    .about-section p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    /* FORCE columns to behave nicely */
+    .about-section .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-section .col-lg-6 {
+        width: 100%;
+    }
+
+    /* highlight card fix */
+    .about-card {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .about-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .about-card li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
 }
