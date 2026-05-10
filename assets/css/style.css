@@ -82,11 +82,9 @@ body{
 }
 
 .hero-buttons .btn{
-    margin: 10px;
-    padding: 12px 28px;
+    padding: 10px 20px;
     border-radius: 50px;
 }
-
 
 /* =========================
    ABOUT SECTION
@@ -1236,11 +1234,26 @@ body{
 ========================= */
 
 .portfolio-hero{
-    background: #0f172a !important;  /* removes image only here */
+    background: #0f172a !important;
+    min-height: 100vh;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 120px 20px 60px;
 }
 
+/* container layout */
+.portfolio-hero .container{
+    width: 100%;
+    max-width: 1200px;
+}
+
+
 .typing-text{
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     color: #38bdf8;
     margin-top: 10px;
     min-height: 30px;
@@ -1272,8 +1285,9 @@ body{
 }
 
 .hero-content h1{
-    font-size: 3rem;       /* was 4rem */
-    margin-bottom: 10px;   /* reduce gap */
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 .typing-text{
@@ -1282,10 +1296,15 @@ body{
 }
 
 .hero-content p{
-    margin-bottom: 15px;   /* tighter spacing */
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    color: #cbd5e1;
 }
 
 .hero-buttons{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 10px;
 }
 
@@ -1591,4 +1610,91 @@ html, body {
         font-size: 0.9rem;
         margin-bottom: 8px;
     }
+}
+
+@media (max-width: 768px){
+
+    .portfolio-hero{
+        padding: 100px 15px 50px;
+        text-align: center;
+    }
+
+    .hero-content{
+        text-align: center;
+    }
+
+    .hero-photo{
+        width: 180px;
+        height: 180px;
+        margin-top: 15px;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .typing-text{
+        font-size: 0.95rem;
+    }
+}
+
+/* =========================
+   PORTFOLIO HERO MOBILE
+========================= */
+
+@media (max-width: 991px){
+
+    .hero-mobile-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-mobile-reverse > div{
+        width: 100%;
+    }
+
+    .hero-photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto 25px;
+    }
+
+
+    .hero-photo img{
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .portfolio-hero h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .portfolio-hero p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .hero-buttons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
 }
